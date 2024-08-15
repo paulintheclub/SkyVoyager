@@ -1,0 +1,145 @@
+.hero-section {
+  position: relative;
+  text-align: center;
+  color: white;
+  background: url('/assets/background_island.jpg') no-repeat center center;
+  background-size: cover;
+  padding: 100px 40px;
+  margin-left: 30px;
+  margin-right: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 30px;
+  .hero-content {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: "DM Sans", sans-serif;
+    h1 {
+      text-align: left;
+      font-size: 4em;
+      margin-bottom: 20px;
+    }
+    p {
+      text-align: left;
+      font-size: 1.2em;
+      margin-bottom: 20px;
+    }
+    button {
+      background-color: white;
+      color: #333;
+      padding: 10px 30px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1.2em;
+
+    }
+  }
+  .carousel {
+    width: 300px;
+    height: 300px;
+    position: relative;
+
+    swiper-container {
+      width: 100%;
+      height: 100%;
+      border-radius: 20px;
+      border: 3px solid #FFFFFF;
+
+      swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 20px;
+        }
+      }
+
+      .swiper-button-next, .swiper-button-prev {
+        color: white !important;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      .swiper-button-next {
+        right: -25px;
+      }
+
+      .swiper-button-prev {
+        left: -25px;
+      }
+
+      .swiper-pagination-bullet {
+        background: white;
+      }
+    }
+
+  }
+  }
+
+.search-section {
+  width: 80%;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: -50px;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  z-index: 1;
+
+
+
+  .search-form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 5px;
+    .search-field {
+      flex: 1 1 calc(18% - 10px);
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 20px;
+      label {
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+      input[type="text"],
+      input[type="date"],
+      input[type="number"] {
+        padding: 10px;
+        height: 40px;
+        border: 1px solid #ccc;
+        background: #eeeeee;
+        border-radius: 5px;
+      }
+
+      input[type="checkbox"] {
+        width: 30px;
+        height: 30px;
+        margin-top: 5px;
+      }
+    }
+
+    .search-button {
+      background-color: #396dec;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1.2em;
+      align-self: center;
+
+    }
+  }
+}

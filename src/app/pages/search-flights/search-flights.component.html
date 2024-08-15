@@ -1,0 +1,64 @@
+<div class="hero-section">
+  <div class="hero-content">
+    <h1>Explore The World with SkyVoyager</h1>
+    <p>Discover unbeatable deals on airfare every season with us. Enjoy peace of mind while finding the perfect ticket at the best price. Plus, take advantage of our special round-trip offers to select destinations and start earning points today!</p>
+    <button>More Details</button>
+  </div>
+  <div class="carousel">
+    <swiper-container slides-per-view="1" navigation="true" pagination="true" space-between="30" loop="true">
+      <swiper-slide>
+        <img src="assets/london.jpg" alt="London">
+      </swiper-slide>
+      <swiper-slide>
+        <img src="assets/paris.jpg" alt="Paris">
+      </swiper-slide>
+      <swiper-slide>
+        <img src="assets/tokyo.jpg" alt="Tokyo">
+      </swiper-slide>
+      <!-- Добавьте больше слайдов по мере необходимости -->
+    </swiper-container>
+  </div>
+</div>
+
+<div class="search-section">
+  <div class="search-form">
+    <div class="search-field">
+      <label for="departure">Departure</label>
+      <input id="departure" type="text" value="INDONESIA">
+    </div>
+    <div class="search-field">
+      <label for="destination">Destination</label>
+      <input id="destination" type="text" value="LONDON">
+    </div>
+    <div class="search-field">
+      <label for="leaving-on">Leaving on</label>
+      <input id="leaving-on" type="date" value="2024-03-15">
+    </div>
+    <div class="search-field">
+      <label for="returning-on">Returning on</label>
+      <input id="returning-on" type="date" value="2024-03-18">
+    </div>
+    <div class="search-field">
+      <label for="budget">Budget</label>
+      <input id="budget" type="text" value="$1000">
+    </div>
+    <div class="search-field">
+      <label for="min-stay">Min Stay (days)</label>
+      <input id="min-stay" type="number" value="7">
+    </div>
+    <div class="search-field">
+      <label for="max-stay">Max Stay (days)</label>
+      <input id="max-stay" type="number" value="14">
+    </div>
+    <div class="search-field">
+      <label for="time-limit">Time Limit (seconds)</label>
+      <input id="time-limit" type="number" value="10">
+    </div>
+    <div class="search-field">
+      <label for="include-return">Include Return Flight</label>
+      <input id="include-return" type="checkbox">
+    </div>
+    <button class="search-button">Find</button>
+  </div>
+</div>
+<app-popular-trips></app-popular-trips>

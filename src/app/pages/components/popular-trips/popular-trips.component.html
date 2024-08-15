@@ -1,0 +1,18 @@
+<div class="popular-trips-section">
+  <h2>Popular Trips</h2>
+  <div class="trip-cards">
+    <div class="trip-card" *ngFor="let trip of popularTrips">
+      <img [src]="trip.imgSrc" [alt]="trip.to">
+      <div class="trip-info">
+        <h3>{{ trip.from }} &rarr; {{ trip.to }}</h3>
+        <p>{{ trip.description }}</p>
+        <div class="trip-details">
+          <span><strong>Duration:</strong> {{ trip.duration }}</span>
+          <span><strong>Airline:</strong> {{ trip.airline }}</span>
+          <span><strong>Stops:</strong> {{ trip.stops }}</span>
+        </div>
+        <span class="trip-price">{{ trip.price }}</span>
+      </div>
+    </div>
+  </div>
+</div>
